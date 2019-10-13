@@ -7,11 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-   
-    <script type="text/javascript" src="http://counter.sina.com.cn/ip/" charset="gb2312"></script>       <!--获取接口数据，注意charset -->
+    <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script type="text/javascript" src="https://counter.sina.com.cn/ip/" charset="gb2312"></script>       <!--获取接口数据，注意charset -->
  
     <script>
-        
+         console.log(returnCitySN)
 document.writeln("IP地址："+ILData[0]+"<br />"); 
         function getUserIP(onNewIP){
   const myPeerConnection = window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection;
