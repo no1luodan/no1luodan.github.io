@@ -44,15 +44,26 @@
 
         document.addEventListener('gesturestart', function (event) {
             console.log("双指缩放手势")
-            document.body.style.transform="scale(1)";
-            event.preventDefault();
+               if(event && event.preventDefault){
+                   console.log('11')
+                event.preventDefault();
+                }else{
+                     console.log('121')
+                window.event.returnValue = false;//注意加window
+                }
+           
           
 
         });
      document.addEventListener('gesturechange', function (event) {
             console.log("双指缩放手势change")
-             document.body.style.transform="scale(1)";
-          event.preventDefault();
+               if(event && event.preventDefault){
+                   console.log('11')
+                event.preventDefault();
+                }else{
+                     console.log('121')
+                window.event.returnValue = false;//注意加window
+                }
           
 
         });
