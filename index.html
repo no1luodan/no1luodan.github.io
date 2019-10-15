@@ -44,6 +44,7 @@
 
         document.addEventListener('gesturestart', function (event) {
             console.log("双指缩放手势")
+            console.log(event)
                if(event && event.preventDefault){
                    console.log('11')
                 event.preventDefault();
@@ -57,6 +58,7 @@
         });
      document.addEventListener('gesturechange', function (event) {
             console.log("双指缩放手势change")
+         console.log(event)
                if(event && event.preventDefault){
                    console.log('11')
                 event.preventDefault();
